@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/image/kitchen-pack.png"
+    />
+    <link rel="stylesheet" href="./assets/css/detailProfil.css" />
+
+    <title>Detail Profil</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fw-bold color" href="home.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold color" href="addRecipe.html"
+                >Add Recipe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold color" href="profil.html">Profile</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-3">
+            <div
+              style="height: 60px; width: 5px; background-color: #efc81a"
+            ></div>
+            <div>
+              <img
+                src="./assets/image/profile.png"
+                alt="profle"
+                width="40px"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div>
+              <p class="m-0">Women</p>
+              <p class="m-0 fw-bold">Logout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex gap-3">
+          <div
+            style="height: 60px; width: 5px; background-color: #efc81a"
+          ></div>
+          <div>
+            <a href="editProfile.html">
+              <img
+                src="./assets/image/profile.png"
+                alt="profle"
+                width="40px"
+                style="border-radius: 50%"
+              />
+            </a>
+          </div>
+          <div>
+            <p class="m-0">Women</p>
+            <p class="m-0 fw-bold">10 Recipes</p>
+          </div>
+        </div>
+
+        <div>
+          <p class="m-0">21 February 2023</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            class="nav-link active fw-bold text-dark clickable"
+            data-bs-toggle="tab"
+            href="#recipes"
+          >
+            Recipes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link fw-bold text-dark clickable"
+            data-bs-toggle="tab"
+            href="#bookmark"
+          >
+            Bookmarked</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link fw-bold text-dark clickable"
+            data-bs-toggle="tab"
+            href="#like"
+          >
+            Liked</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="recipes">
+        <div class="container my-5 p-3">
+          <div class="row">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/image/bomb-chiken.jpg"
+                alt="menu"
+                class="rounded object-fit-cover"
+                width="280px"
+                height="280px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div>
+                <h5 class="fw-bold">
+                  Bomb <br />
+                  Chiken
+                </h5>
+                <p class="fs-5 m-0">Ingredients</p>
+                <ul class="fs-6">
+                  <li>Chiken</li>
+                  <li>Dumping Wrap</li>
+                  <li>Garlic</li>
+                  <li>Spring Onion</li>
+                  <li>Soy Sauce</li>
+                  <li>Black Sesame Seed</li>
+                </ul>
+                <button
+                  class="mb-2 text-white rounded border border-0 p-1 fw-bold"
+                  style="background-color: #efc81a"
+                >
+                  10 Likes - 12 Coments - 3 Bookmark
+                </button>
+                <div class="d-flex gap-4 my-2">
+                  <button
+                    class="border border-0 fw-bold py-1 px-3 rounded"
+                    style="background-color: #30c0f3"
+                  >
+                    <a
+                      href="editMenu.html"
+                      class="text-white text-decoration-none"
+                      >Edit Menu</a
+                    >
+                  </button>
+                  <button
+                    class="border border-0 fw-bold py-1 px-3 rounded"
+                    style="background-color: #f57e71"
+                  >
+                    <a
+                      href="editMenu.html"
+                      class="text-white text-decoration-none"
+                      >Delete Menu</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="./assets/image/bomb-chiken.jpg"
+                  alt="menu"
+                  class="rounded object-fit-cover"
+                  width="280px"
+                  height="280px"
+                />
+              </div>
+              <div class="col-md-8">
+                <div>
+                  <h5 class="fw-bold">
+                    Bomb <br />
+                    Chiken
+                  </h5>
+                  <p class="fs-5 m-0">Ingredients</p>
+                  <ul class="fs-6">
+                    <li>Chiken</li>
+                    <li>Dumping Wrap</li>
+                    <li>Garlic</li>
+                    <li>Spring Onion</li>
+                    <li>Soy Sauce</li>
+                    <li>Black Sesame Seed</li>
+                  </ul>
+                  <button
+                    class="mb-2 text-white rounded border border-0 p-1 fw-bold"
+                    style="background-color: #efc81a"
+                  >
+                    10 Likes - 12 Coments - 3 Bookmark
+                  </button>
+                  <div class="d-flex gap-4 my-2">
+                    <button
+                      class="border border-0 fw-bold py-1 px-3 rounded"
+                      style="background-color: #30c0f3"
+                    >
+                      <a
+                        href="editMenu.html"
+                        class="text-white text-decoration-none"
+                        >Edit Menu</a
+                      >
+                    </button>
+                    <button
+                      class="border border-0 fw-bold py-1 px-3 rounded"
+                      style="background-color: #f57e71"
+                    >
+                      <a
+                        href="editMenu.html"
+                        class="text-white text-decoration-none"
+                        >Delete Menu</a
+                      >
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 d-flex justify-content-center gap-5">
+            <button
+              class="mb-2 text-white rounded border border-0 fw-bold btn-previous"
+              style="background-color: #efc81a"
+            >
+              <i class="fas fa-arrow-left"></i> Previous
+            </button>
+            <button
+              class="mb-2 text-white rounded border border-0 fw-bold btn-next"
+              style="background-color: #efc81a"
+            >
+              Next <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="bookmark">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/image/bomb-chiken.jpg"
+                alt="menu"
+                class="rounded object-fit-cover"
+                width="280px"
+                height="280px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div>
+                <h5 class="fw-bold">
+                  Bomb <br />
+                  Chiken
+                </h5>
+                <p class="fs-5 m-0">Ingredients</p>
+                <ul class="fs-6">
+                  <li>Chiken</li>
+                  <li>Dumping Wrap</li>
+                  <li>Garlic</li>
+                  <li>Spring Onion</li>
+                  <li>Soy Sauce</li>
+                  <li>Black Sesame Seed</li>
+                </ul>
+                <button
+                  class="mb-2 text-white rounded border border-0 p-1 fw-bold"
+                  style="background-color: #efc81a"
+                >
+                  10 Likes - 12 Coments - 3 Bookmark
+                </button>
+                <div class="my-2">
+                  <button
+                    class="border border-0 fw-bold py-1 px-3 rounded"
+                    style="background-color: #f57e71"
+                  >
+                    <a
+                      href="editMenu.html"
+                      class="text-white text-decoration-none"
+                      >Delete From Bookmark</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="my-5 d-flex justify-content-center gap-5">
+              <button
+                class="mb-2 text-white rounded border border-0 fw-bold btn-previous"
+                style="background-color: #efc81a"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button
+                class="mb-2 text-white rounded border border-0 fw-bold btn-next"
+                style="background-color: #efc81a"
+              >
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="like">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-4 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="./assets/image/bomb-chiken.jpg"
+                alt="menu"
+                class="rounded object-fit-cover"
+                width="280px"
+                height="280px"
+              />
+            </div>
+            <div class="col-md-8">
+              <div>
+                <h5 class="fw-bold">
+                  Bomb <br />
+                  Chiken
+                </h5>
+                <p class="fs-5 m-0">Ingredients</p>
+                <ul class="fs-6">
+                  <li>Chiken</li>
+                  <li>Dumping Wrap</li>
+                  <li>Garlic</li>
+                  <li>Spring Onion</li>
+                  <li>Soy Sauce</li>
+                  <li>Black Sesame Seed</li>
+                </ul>
+                <button
+                  class="mb-2 text-white rounded border border-0 p-1 fw-bold"
+                  style="background-color: #efc81a"
+                >
+                  10 Likes - 12 Coments - 3 Bookmark
+                </button>
+                <div class="my-2">
+                  <button
+                    class="border border-0 fw-bold py-1 px-3 rounded"
+                    style="background-color: #f57e71"
+                  >
+                    <a
+                      href="editMenu.html"
+                      class="text-white text-decoration-none"
+                      >Delete From Like</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="my-5 d-flex justify-content-center gap-5">
+              <button
+                class="mb-2 text-white rounded border border-0 fw-bold btn-previous"
+                style="background-color: #efc81a"
+              >
+                <i class="fas fa-arrow-left"></i> Previous
+              </button>
+              <button
+                class="mb-2 text-white rounded border border-0 fw-bold btn-next"
+                style="background-color: #efc81a"
+              >
+                Next <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-content text-center">
+            <h1 class="fw-bold">Eat, Cook, Repeat</h1>
+            <p>Share Your Best Recipe By Uploading Here !</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

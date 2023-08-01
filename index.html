@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/image/kitchen-pack.png"
+    />
+    <title>Food Recipe</title>
+  </head>
+  <body>
+    <div class="box-yellow d-none d-md-block"></div>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold"
+                style="color: #2e266f"
+                href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold"
+                style="color: #2e266f"
+                href="addRecipe.html"
+                >Add Recipe</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold"
+                style="color: #2e266f"
+                href="detailProfil.html"
+                >Profile</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex gap-4">
+            <a class="text-decoration-none fw-bold" href="login.html">Login</a>
+            <a class="text-decoration-none fw-bold" href="register.html"
+              >Register</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex flex-column text-position mt-5">
+            <div data-aos="fade-down-right" data-aos-duration="3000">
+              <h1 class="fw-bold color">
+                Discover Recipe <br />
+                &amp; Delicious Food
+              </h1>
+              <form class="form-inline">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control rounded w-80"
+                    placeholder="&#xF002; Search Restauran Food"
+                    aria-label="Search"
+                    style="background-color: #efefef"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="fade-down-left" data-aos-duration="3000">
+              <img
+                class="object-fit-cover rounded img-hero"
+                src="./assets/image/egg-sandwich.png"
+                alt="hero"
+                width="550px"
+                height="400px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="d-flex gap-3">
+        <div style="height: 60px; width: 10px; background-color: #efc81a"></div>
+        <div class="d-flex align-items-center">
+          <h2 class="fw-bold m-0">Popular For You!</h2>
+        </div>
+      </div>
+      <div class="my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div data-aos="fade-up-right" data-aos-duration="3000">
+              <img
+                src="./assets/image/ramen.jpg"
+                alt="popular menu"
+                width="450px"
+                height="400px"
+                class="object-fit-cover rounded img-hero"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-5">
+            <div data-aos="fade-down-left" data-aos-duration="3000">
+              <h1 class="fw-bold mb-4">
+                Healthy Bone Broth <br />
+                Ramen (Quick & Easy)
+              </h1>
+              <p class="mb-4">
+                Quick + Easy Chicken Bone Broth Ramen- <br />Healthy chicken
+                ramen in a hurry ? That's <br />
+                right!
+              </p>
+              <button
+                class="mb-2 text-white rounded border border-0 p-2 fw-bold"
+                style="background-color: #efc81a"
+              >
+                <a
+                  href="detailMenu.html"
+                  class="text-decoration-none text-white"
+                  >Lean More</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-yellow d-none d-md-block"></div>
+    <div class="container">
+      <div class="d-flex gap-3">
+        <div style="height: 60px; width: 10px; background-color: #efc81a"></div>
+        <div class="d-flex align-items-center">
+          <h2 class="fw-bold m-0">New Recipe</h2>
+        </div>
+      </div>
+      <div class="my-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div data-aos="zoom-in" data-aos-duration="3000">
+              <img
+                src="./assets/image/ramen2.jpg"
+                alt="popular menu"
+                width="450px"
+                height="400px"
+                class="object-fit-cover rounded img-hero"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 mt-5">
+            <div data-aos="zoom-in-left" data-aos-duration="3000">
+              <h1 class="fw-bold mb-4">
+                Healthy Bone Broth <br />
+                Ramen (Quick & Easy)
+              </h1>
+              <p class="mb-4">
+                Quick + Easy Chicken Bone Broth Ramen- <br />Healthy chicken
+                ramen in a hurry ? That's <br />
+                right!
+              </p>
+              <button
+                class="mb-2 text-white rounded border border-0 p-2 fw-bold"
+                style="background-color: #efc81a"
+              >
+                <a
+                  href="detailMenu.html"
+                  class="text-decoration-none text-white"
+                  >Lean More</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="d-flex gap-3 mb-5">
+        <div style="height: 60px; width: 10px; background-color: #efc81a"></div>
+        <div class="d-flex align-items-center">
+          <h2 class="fw-bold m-0">Popular Recipe</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/chinkenkare.png"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Chiken <br />
+                  Kare
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/bomb-chiken.jpg"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Bomb <br />
+                  Chiken
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/banana.png"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Banana <br />
+                  Smothie Pop
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/sugarsalmon.png"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Sugar <br />
+                  Salmon
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/coffecake.png"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Coffe Lava <br />
+                  Cake
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center mb-5">
+          <div data-aos="flip-up" data-aos-duration="3000">
+            <div class="position-relative">
+              <img
+                src="./assets/image/indiansalad.png"
+                alt="new"
+                width="300px"
+                height="300px"
+                class="object-fit-cover rounded"
+              />
+              <div class="title">
+                <h5 class="text-dark fw-bold">
+                  Indian <br />
+                  Salad
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-content text-center">
+            <h1 class="fw-bold">Eat, Cook, Repeat</h1>
+            <p>Share Your Best Recipe By Uploading Here !</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

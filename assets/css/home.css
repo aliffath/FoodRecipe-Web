@@ -1,0 +1,64 @@
+.btn-warning {
+  color: #ffffff;
+  background-color: #efc81a;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.form-control {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
+  border-color: black;
+}
+
+.form-control::placeholder {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.form-control:focus {
+  border-color: #efc81a;
+  box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+.btn-category {
+  border: none;
+  background-color: #efc81a;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.btn-category2 {
+  border: none;
+  background-color: #00e092;
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+.image-menu {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.btn-next {
+  padding: 10px 40px;
+}
+
+.btn-previous {
+  padding: 10px 20px;
+}
+@media only screen and (max-width: 40em) {
+  .col-md-8 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
